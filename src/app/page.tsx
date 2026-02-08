@@ -62,6 +62,34 @@ const skills = [
   { title: "Languages", items: ["Malay (Native)", "English (Professional)"] },
 ];
 
+const certificates = [
+  {
+    title: "Cybersecurity Essentials",
+    issuer: "Cisco Networking Academy",
+    year: "Nov 2019",
+    description:
+      "Built a strong foundation in cybersecurity principles including network defense, threat analysis, risk management, and securing organizational information systems.",
+    href: "/certificates/cybersecurity-essentials.pdf",
+  },
+  {
+    title: "Introduction to Cybersecurity",
+    issuer: "Cisco Networking Academy",
+    year: "Nov 2019",
+    description:
+      "Learned core cybersecurity concepts such as cybercrime risks, evolving threats, defensive strategies, and resilient infrastructures for secure operations.",
+    href: "/certificates/introduction-to-cybersecurity.pdf",
+  },
+  {
+    title: "Networking Essentials",
+    issuer: "Cisco Networking Academy",
+    year: "Jan 2019",
+    description:
+      "Developed networking fundamentals including IP addressing, subnetting, routing, switching, and troubleshooting for secure and scalable infrastructure.",
+    href: "/certificates/networking-essentials.pdf",
+  },
+];
+
+
 function Pill({ children }: { children: React.ReactNode }) {
   return (
     <span className="rounded-full border border-zinc-200 bg-white/60 px-3 py-1 text-xs text-zinc-700 backdrop-blur">
@@ -619,6 +647,43 @@ export default function Page() {
               <p className="mt-2 text-sm text-zinc-700">CGPA: 3.23</p>
               <p className="mt-1 text-xs text-zinc-500">May 2018 – Jan 2021</p>
             </Card>
+          </div>
+        </section>
+
+        {/* Certificates */}
+        <section id="certificates" className="mx-auto max-w-6xl py-6">
+          <SectionTitle
+            title="Certificates"
+            desc="Professional certifications supporting my technical and analytical skills."
+          />
+
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {certificates.map((c) => (
+              <Card key={c.title}>
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-sm font-semibold text-zinc-900">{c.title}</h3>
+                    <p className="mt-1 text-sm text-zinc-600">{c.issuer}</p>
+                  </div>
+                  <span className="text-xs text-zinc-500">{c.year}</span>
+                </div>
+
+                <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                  {c.description}
+                </p>
+
+                <div className="mt-4">
+                  <a
+                    href={c.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center rounded-lg border border-zinc-200 bg-white px-3 py-2 text-xs font-medium text-zinc-700 hover:bg-zinc-50 hover:text-zinc-900 transition"
+                  >
+                    View Certificate
+                  </a>
+                </div>
+              </Card>
+            ))}
           </div>
         </section>
 
