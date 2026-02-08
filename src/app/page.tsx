@@ -22,8 +22,8 @@ const LINKS = {
 
 const projects: Project[] = [
   {
-    title: "Road Bump Detection (FYP)",
-    subtitle: "YOLOv11 vs SSD vs Faster R-CNN — object detection comparison",
+    title: "Road Bump Detection for Improved Driver Safety Using Deep Learning (Bachelor FYP)",
+    subtitle: "Research-Based Approach for Road Bump Detection",
     period: "Oct 2024 – Jul 2025",
     description:
       "Deep learning-based detection system to improve driver safety and ride comfort, with a prototype web interface for testing and visualization.",
@@ -35,7 +35,7 @@ const projects: Project[] = [
     tech: ["Python", "PyTorch", "TorchVision", "Ultralytics YOLOv11", "OpenCV", "COCO", "Laravel"],
     links: [
       { label: "Live Demo", href: LINKS.fypDemo },
-      { label: "GitHub", href: LINKS.github },
+      /*{ label: "GitHub", href: LINKS.github },*/
     ],
     featured: true,
   },
@@ -51,13 +51,13 @@ const projects: Project[] = [
       "Delivered social value by providing reliable information access.",
     ],
     tech: ["HTML", "CSS", "PHP", "MySQL"],
-    links: [{ label: "GitHub", href: LINKS.github }],
+    /* Top glow links: [{ label: "GitHub", href: LINKS.github }], */
   },
 ];
 
 const skills = [
   { title: "Data & Analytics", items: ["Power BI", "Tableau", "Excel", "Data Cleaning", "Data Visualization"] },
-  { title: "Programming & Development", items: ["Python", "R", "SQL", "React", "Node.js", "PHP", "Java", "HTML/CSS", "Laravel"] },
+  { title: "Programming & Development", items: ["Python", "R", "SQL", "Next.js", "TypeScript", "React", "Node.js", "PHP", "Java", "HTML/CSS", "Tailwind CSS", "Laravel"] },
   { title: "ML & Computer Vision", items: ["PyTorch", "TensorFlow", "TorchVision", "Ultralytics (YOLOv11)", "OpenCV"] },
   { title: "Languages", items: ["Malay (Native)", "English (Professional)"] },
 ];
@@ -171,7 +171,7 @@ export default function Page() {
               </div>
               <div className="leading-tight">
                 <p className="text-sm font-semibold">Zulhilmi Faiz</p>
-                <p className="text-xs text-zinc-500">Data Science • CV • Web</p>
+                <p className="text-xs text-zinc-500">Data Science</p>
               </div>
             </div>
 
@@ -222,14 +222,14 @@ export default function Page() {
                   />
                 </div>
                 <div className="min-w-0 text-center sm:text-left">
-                  <p className="text-sm font-semibold text-zinc-900 truncate">Zulhilmi Faiz Bin Zainal Alam</p>
+                  <p className="font-semibold text-zinc-900 truncate">Zulhilmi Faiz Bin Zainal Alam</p>
                   <p className="text-sm text-zinc-600 leading-snug">
-                    Computer Science (Data Science) • Analytics • Computer Vision
+                    Computer Science • Data Science • Analytics • Computer Vision • Web Application • Cyber Security
                   </p>
                   <div className="mt-2 flex justify-center sm:justify-start">
                     <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs text-zinc-700 backdrop-blur">
                       <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                      Available for roles • Data / BI / CV
+                      Available for roles • Data / Analytics
                     </div>
                   </div>
                 </div>
@@ -247,10 +247,12 @@ export default function Page() {
               {/* Compact pills */}
               <div className="mt-4 flex flex-wrap gap-2">
                 <Pill>Power BI</Pill>
-                <Pill>SQL</Pill>
                 <Pill>Python</Pill>
+                <Pill>SQL</Pill>
                 <Pill>PyTorch</Pill>
-                <Pill>YOLOv11</Pill>
+                <Pill>Next.js</Pill>
+                <Pill>PHP</Pill>
+                <Pill>Excel</Pill>
                 <Pill>Laravel</Pill>
               </div>
             </div>
@@ -285,6 +287,64 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        {/* About */}
+        <section id="about" className="mx-auto max-w-6xl">
+          <SectionTitle
+            title="About Me"
+            desc="Background, interests, and the kind of problems I enjoy working on."
+          />
+
+          <div className="mt-6">
+            <Card>
+              <p className="text-sm leading-relaxed text-justify text-zinc-600">
+                I am a Computer Science graduate specializing in Data Science,
+                with hands-on experience in data analytics, IT support, and
+                software development. I have completed internships in both technical
+                and analytical roles, including as a Data Analyst Intern at Malaysia Aviation Group
+                (MAG) and an Engineering IT Intern at Daikin Research & Development.
+                I enjoy working at the intersection of data, engineering, and real-world
+                problem solving.
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-justify text-zinc-600">
+                At MAG, I worked on building Power BI dashboards, preparing and validating data, and collaborating with internal
+                stakeholders to ensure accurate and meaningful reporting aligned with business goals.
+                My experience strengthened my ability to translate raw data into actionable insights for decision-making.
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-justify text-zinc-600">
+                In addition, my technical background includes developing web-based systems, troubleshooting hardware and software issues,
+                and managing IT resources. For my Final Year Project, I implemented deep learning models for road bump detection using PyTorch and Ultralytics, and developed a Laravel-based
+                web prototype to visualize real-time prediction results, with potential application in ADAS systems.
+              </p>
+
+              <p className="mt-3 text-sm leading-relaxed text-justify text-zinc-600">
+                I am a fast learner with strong analytical thinking, comfortable working with data, technology, and cross-functional teams.
+                I am currently seeking opportunities
+                where I can apply my skills in data analysis, technology, and problem-solving while continuing to grow professionally.
+              </p>
+            </Card>
+          </div>
+        </section>
+
+        {/* Skills */}
+        <section id="skills" className="mx-auto max-w-6xl py-6">
+          <SectionTitle title="Skills" desc="A focused skill set developed through academic and applied work." />
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {skills.map((s) => (
+              <Card key={s.title}>
+                <h3 className="text-sm font-semibold text-zinc-900">{s.title}</h3>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {s.items.map((it) => (
+                    <Pill key={it}>{it}</Pill>
+                  ))}
+                </div>
+              </Card>
+            ))}
+          </div>
+        </section>
+
 
         {/* Projects */}
         <section id="projects" className="mx-auto max-w-6xl py-6">
@@ -338,27 +398,9 @@ export default function Page() {
           </div>
         </section>
 
-
-        {/* Skills */}
-        <section id="skills" className="mx-auto max-w-6xl py-6">
-          <SectionTitle title="Skills" desc="Focused set of tools aligned with analytics + CV + web delivery." />
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {skills.map((s) => (
-              <Card key={s.title}>
-                <h3 className="text-sm font-semibold text-zinc-900">{s.title}</h3>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {s.items.map((it) => (
-                    <Pill key={it}>{it}</Pill>
-                  ))}
-                </div>
-              </Card>
-            ))}
-          </div>
-        </section>
-
         {/* Experience */}
         <section id="experience" className="mx-auto max-w-6xl py-6">
-          <SectionTitle title="Experience" desc="Internships with real reporting, data quality, and delivery impact." />
+          <SectionTitle title="Experience" desc="Internship Experience in Real-World and Business Environments" />
 
           <div className="mt-8 grid gap-5">
             <Card>
@@ -368,7 +410,7 @@ export default function Page() {
                   {/* MAG Logo */}
                   <div className="relative h-10 w-16 shrink-0">
                     <Image
-                      src="/mag.jfif"
+                      src="/mag.png"
                       alt="Malaysia Aviation Group"
                       fill
                       className="object-contain"
@@ -587,8 +629,8 @@ export default function Page() {
               <div className="md:col-span-7">
                 <h2 className="text-2xl font-semibold tracking-tight">Let’s connect.</h2>
                 <p className="mt-3 text-sm leading-relaxed text-zinc-600">
-                  If you’re hiring for data/analytics, BI reporting, or computer vision roles, I’d love to chat.
-                  Fastest way to reach me is email.
+                  If you are hiring for data/analytics, BI reporting, or computer vision roles, I would love to chat.
+                  The best way to reach me is by email.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
