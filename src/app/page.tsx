@@ -636,7 +636,7 @@ export default function Page() {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Button href={LINKS.email} variant="primary">Email</Button>
                   <Button href={LINKS.linkedin} variant="secondary">LinkedIn</Button>
-                  <Button href={LINKS.github} variant="secondary">GitHub</Button>
+                  {/*<Button href={LINKS.github} variant="secondary">GitHub</Button> */}
                   <Button href="/resume.pdf" variant="secondary">Download Resume</Button>
                 </div>
               </div>
