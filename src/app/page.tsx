@@ -326,31 +326,23 @@ export default function Page() {
           <div className="mt-6">
             <Card>
               <p className="text-sm leading-relaxed text-justify text-zinc-600">
-                I am a Computer Science graduate specializing in Data Science,
-                with hands-on experience in data analytics, IT support, and
-                software development. I have completed internships in both technical
-                and analytical roles, including as a Data Analyst Intern at Malaysia Aviation Group
-                (MAG) and an Engineering IT Intern at Daikin Research & Development.
-                I enjoy working at the intersection of data, engineering, and real-world
-                problem solving.
+                I am a Computer Science graduate specializing in Data Science, with hands-on experience across data analytics, IT support, and software development. I have completed internships in both analytical and technical roles, including as a Data Analyst Intern at Malaysia Aviation Group (MAG) and an Engineering IT Intern at Daikin Research & Development, where I worked closely with data, systems, and real operational challenges.
               </p>
 
               <p className="mt-3 text-sm leading-relaxed text-justify text-zinc-600">
-                At MAG, I worked on building Power BI dashboards, preparing and validating data, and collaborating with internal
-                stakeholders to ensure accurate and meaningful reporting aligned with business goals.
-                My experience strengthened my ability to translate raw data into actionable insights for decision-making.
+                I enjoy working at the intersection of data, engineering, and real-world problem solving. I am particularly interested in using data to improve decision-making, streamline processes, and build systems that are practical, reliable, and user-focused. I enjoy learning new tools and technologies and applying them in ways that create measurable impact.
+
               </p>
 
               <p className="mt-3 text-sm leading-relaxed text-justify text-zinc-600">
-                In addition, my technical background includes developing web-based systems, troubleshooting hardware and software issues,
-                and managing IT resources. For my Final Year Project, I implemented deep learning models for road bump detection using PyTorch and Ultralytics, and developed a Laravel-based
-                web prototype to visualize real-time prediction results, with potential application in ADAS systems.
+                I am motivated by problems that involve turning raw or messy data into clear insights, improving reporting accuracy, and building solutions that support business and operational goals. At MAG, I worked on Power BI dashboards, data preparation, validation, and stakeholder collaboration to ensure reporting aligned with real business needs.
               </p>
 
               <p className="mt-3 text-sm leading-relaxed text-justify text-zinc-600">
-                I am a fast learner with strong analytical thinking, comfortable working with data, technology, and cross-functional teams.
-                I am currently seeking opportunities
-                where I can apply my skills in data analysis, technology, and problem-solving while continuing to grow professionally.
+                I also enjoy technical problem-solving, including developing web-based systems, troubleshooting hardware and software issues, and managing IT resources. For my Final Year Project, I implemented deep learning models for road bump detection using PyTorch and Ultralytics, and built a Laravel-based web prototype to visualize prediction results, with potential applications in intelligent transportation and ADAS systems.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-justify text-zinc-600">
+                I am a fast learner with strong analytical thinking, comfortable working with data, technology, and cross-functional teams. I am currently seeking opportunities where I can apply my skills in data analysis, technology, and problem-solving, while continuing to grow professionally and contribute to meaningful projects.
               </p>
             </Card>
           </div>
